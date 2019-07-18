@@ -1,0 +1,8 @@
+<launch>
+
+  <param name="/gpg/camera_info_url" value="$(find project)/cfg/rpi_camera.yaml"/>
+
+  <node name="camera_info_publisher" pkg="project" type="camera_info_publisher" respawn="false"
+    output="screen" ns="/gpg"/>
+	  
+</launch>
